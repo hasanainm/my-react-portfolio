@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.7;
   text-align: center;
   height: 100%;
@@ -25,5 +25,28 @@ body {
     text-transform: uppercase;
   }
 
+  &--other {
+    display: block;
+    font-weight: 300;
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    color: grey;
+    text-transform: uppercase;
+  }
 
+  &--bio {
+    display: block;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    color: darkslategrey;
+    text-transform: uppercase;
+  }
+
+
+}
+
+
+.bio {
+  padding-left: 13rem;
 }
