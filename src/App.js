@@ -1,9 +1,14 @@
 import React from 'react';
-import "./css/style.css"
+import Home from "./components/Home";
+import AboutMe from "./components/AboutMe";
+
 
 function App() {
   return (
-    <div className="test">hello world</div>
+    <div>
+      <Home />
+      <AboutMe />
+    </div>
   );
 }
 

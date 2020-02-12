@@ -1,0 +1,94 @@
+.btn{
+
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:1.5rem 4rem ;
+    display: inline-block;
+    border-radius: .2rem;
+    transition: all .2s;
+    position: relative;
+    border: solid white .2rem;
+    background: transparent;
+    font-size: $default-font-size;
+  }
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(black,.2);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.2);;
+  }
+  
+  &--white {
+    background-color: white;
+    color: white;
+    &::after {
+      background-color: white;
+    }
+  }
+  
+  /* The after pseudo-element that were gonna use adds like a virtual element right after the element that were selecting and we can then style that element*/
+  
+  
+  /* trick here is to add an element that looks exactly liek the button we have already but we put it behind the button and when we hover out of the bottom then this hidden pseudo-element goes back behind the button*/
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    // border-radius: .1rem;
+    background-color: transparent;
+    border: solid white .2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    
+  }
+  
+  &--animated {
+    animation: moveInBottom .5s ease-out .75s;
+    /* it will automatically apply the styles up to zero percent before the animation starts. The styles in the moveInBottom will apply before the animation starts*/
+    animation-fill-mode: backwards;
+  }
+}
+
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    color:white;
+    // display inline so we can use box model properties such as padding margin
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    padding: 3px;
+    transition: all .2s;
+  }
+
+  &:hover {
+    background-color: white;
+    color: white;
+    box-shadow: 0 1rem 2rem rgba(black,.15);
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: 0 .5rem 1rem rgba(black,.15);
+    transform: translateY(0);
+  }
+}
+
+li {
+  list-style: none;
+}

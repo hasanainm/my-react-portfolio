@@ -1,9 +1,46 @@
 .u-center-text {
   text-align: center !important; }
 
-.test {
-  font-size: 6rem;
-  color: blue; }
+.u-margin-top-small {
+  margin-top: 4rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 12rem !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-bottom-huge {
+  margin-bottom: 12rem !important; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.7;
+  text-align: center;
+  height: 100%;
+  min-height: 100%; }
+
+.heading-primary--main {
+  display: block;
+  font-weight: 300;
+  font-size: 3.5rem;
+  letter-spacing: .6rem;
+  color: white;
+  text-transform: uppercase; }
+
+.heading-primary--sub {
+  display: block;
+  font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: .5rem;
+  color: white;
+  text-transform: uppercase; }
 
 *,
 *::after,
@@ -19,6 +56,73 @@ html {
 
 body {
   box-sizing: border-box; }
+
+.btn {
+  /* The after pseudo-element that were gonna use adds like a virtual element right after the element that were selecting and we can then style that element*/
+  /* trick here is to add an element that looks exactly liek the button we have already but we put it behind the button and when we hover out of the bottom then this hidden pseudo-element goes back behind the button*/ }
+  .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: .2rem;
+    transition: all .2s;
+    position: relative;
+    border: solid white .2rem;
+    background: transparent;
+    font-size: 1.6rem; }
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn--white {
+    background-color: white;
+    color: white; }
+    .btn--white::after {
+      background-color: white; }
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: solid white .2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s; }
+  .btn--animated {
+    animation: moveInBottom .5s ease-out .75s;
+    /* it will automatically apply the styles up to zero percent before the animation starts. The styles in the moveInBottom will apply before the animation starts*/
+    animation-fill-mode: backwards; }
+
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: white;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+li {
+  list-style: none; }
 
 .row {
   max-width: 114rem;
@@ -45,3 +149,15 @@ body {
     width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.main-bg {
+  position: relative;
+  background-image: linear-gradient(45deg, #4fa49a, #4361c2);
+  width: 100vw;
+  height: 80vh; }
