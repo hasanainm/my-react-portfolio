@@ -5,3 +5,11 @@
       clear: both;
   }
 }
+
+@mixin gap{
+  background-color:#2b506b;
+  width:100%;
+  height: 8rem;
+  position: absolute;
+}
+

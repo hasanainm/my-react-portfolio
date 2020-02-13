@@ -44,6 +44,15 @@ body {
     text-transform: uppercase;
   }
 
+  &--project {
+    display: block;
+    font-weight: 300;
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    color: grey;
+    text-transform: uppercase;
+  }
+
   &--bio {
     display: block;
     font-weight: 300;

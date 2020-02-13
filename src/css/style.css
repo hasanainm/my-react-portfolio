@@ -68,6 +68,14 @@ body {
   color: white;
   text-transform: uppercase; }
 
+.heading-primary--project {
+  display: block;
+  font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: .5rem;
+  color: grey;
+  text-transform: uppercase; }
+
 .heading-primary--bio {
   display: block;
   font-weight: 300;
@@ -165,9 +173,7 @@ li {
   width: 20%; }
 
 .cli-bg {
-  position: absolute;
-  background-image: linear-gradient(45deg, #9c9c9c, #717ea8);
-  background-color: #e5e2e2;
+  background-color: #2b506b;
   width: 100vw;
   height: 85vh; }
 
@@ -325,6 +331,25 @@ figure.effect-julia:hover p {
   width: 30rem;
   border-radius: .2rem; }
 
+.skills {
+  background-color: #2b506b;
+  width: 100%;
+  height: 8rem;
+  position: absolute; }
+  .skills-content {
+    border-radius: 1.5rem;
+    background-color: aliceblue;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    height: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 3rem 2rem; }
+  .skills-cards ul {
+    list-style: none; }
+  .skills-heading {
+    text-decoration: underline; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -363,3 +388,7 @@ figure.effect-julia:hover p {
   background-size: cover;
   width: 100vw;
   height: 90vh; }
+
+.skills-list {
+  height: auto;
+  margin-bottom: 5rem; }

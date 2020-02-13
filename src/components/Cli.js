@@ -1,7 +1,6 @@
 import React from 'react';
 import "../css/style.css";
 
-
 const Cli = () => {
   return (
     <div className="grid">
