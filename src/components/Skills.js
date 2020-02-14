@@ -5,48 +5,31 @@ import "../css/style.css";
 const Skills = () => {
   return (
     <div>
-    <section class="skills-list">
-    <div class="skills"></div>
-    <div class="skills-content">
-      <div class="skills-cards">
-        <div class="row">
-          <div class="col-1-of-4">
-            <h2 class="skills-heading">Front-End <i class="fa fa-code" aria-hidden="true"></i></h2>
-            <ul>
-              <li>sdfsdfsfsdf</li>
-              <li>sdfsdfsfsdf</li>
-              <li>sdfsdfsfsdf</li>
-            </ul>
-          </div>
-          <div class="col-1-of-4">
-            <h2 class="skills-heading">Back-End <i class="fa fa-plug" aria-hidden="true"></i></h2>
-            <ul>
-              <li>sdfsdfsfsdf</li>
-              <li>sdfsdfsfsdf</li>
-              <li>sdfsdfsfsdf</li>
-            </ul>
-          </div>
-          <div class="col-1-of-4">
-            <h2 class="skills-heading">Framework <i class="fa fa-paint-brush" aria-hidden="true"></i></h2>
-            <ul>
-              <li>sdfsdfsfsdf</li>
-              <li>sdfsdfsfsdf</li>
-              <li>sdfsdfsfsdf</li>
-            </ul>
-          </div>
-          <div class="col-1-of-4">
-            <h2 class="skills-heading">Other <i class="fa fa-desktop" aria-hidden="true"></i></h2>
-            <ul>
-              <li>sdfsdfsfsdf</li>
-              <li>sdfsdfsfsdf</li>
-              <li>sdfsdfsfsdf</li>
-            </ul>
-          </div>
+      <section className="skills-list u-padding-bottom-tiny">
+          <h1 className="heading-primary--skills u-padding-top-tiny u-padding-bottom-tiny">Skills</h1>
+        <div className="u-margin-bottom-small">
+          <img src="./img/html.svg" alt="icons" className="skills-icon" />
+          <img src="./img/css.svg" alt="icons" className="skills-icon" />
+          <img src="./img/sass.svg" alt="icons" className="skills-icon" />
+          <img src="./img/bootstrap.svg" alt="icons" className="skills-icon" />
+          <img src="./img/javascript.svg" alt="icons" className="skills-icon" />
+          <img src="./img/react.svg" alt="icons" className="skills-icon" />
+          <img src="./img/jquery.svg" alt="icons" className="skills-icon" />
+          <img src="./img/nodejs.svg" alt="icons" className="skills-icon" />
+          <img src="./img/express.svg" alt="icons" className="skills-icon" />
+          <img src="./img/java.svg" alt="icons" className="skills-icon" />
         </div>
-      </div>
-    </div>
-  </section>
-
+        <img src="./img/ruby.svg" alt="icons" className="skills-icon" />
+        <img src="./img/sql.svg" alt="icons" className="skills-icon" />
+        <img src="./img/mongo.svg" alt="icons" className="skills-icon" />
+        <img src="./img/wordpress.svg" alt="icons" className="skills-icon" />
+        <img src="./img/linux.svg" alt="icons" className="skills-icon" />
+        <img src="./img/ubuntu.svg" alt="icons" className="skills-icon" />
+        <img src="./img/npm.png" alt="icons" className="skills-icon" />
+        <img src="./img/git.svg" alt="icons" className="skills-icon" />
+        <img src="./img/firebase.png" alt="icons" className="skills-icon--firebase" />
+        <img src="./img/heroku.svg" alt="icons" className="skills-icon" />
+      </section>
     </div>
   )
 }

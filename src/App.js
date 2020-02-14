@@ -3,7 +3,8 @@ import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import CliGrid from './components/CliGrid';
 import Projects from './components/Projects';
-import Skills from './components/Skills'
+import Skills from './components/Skills';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -11,9 +12,10 @@ class App extends Component {
       <div>
       <Home />
       <AboutMe />
-      <CliGrid />
       <Skills/>
+      <CliGrid />
       <Projects/>
+      <Footer />
       </div>
     );
   }

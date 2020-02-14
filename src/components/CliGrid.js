@@ -6,7 +6,7 @@ const CliGrid = () => {
     <div>
     <section className="cli-bg">
       <div className="row">
-        <h1 className="heading-primary--cli u-margin-top-small">CLI Projects</h1>
+        <h1 className="heading-primary--cli u-padding-top-tiny">CLI Projects</h1>
         <Cli />
       </div>
     </section>
