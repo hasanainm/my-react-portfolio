@@ -10,6 +10,9 @@
 .u-padding-bottom-tiny {
   padding-bottom: 2rem !important; }
 
+.u-padding-bottom-small {
+  padding-bottom: 4rem !important; }
+
 .u-margin-top-tiny {
   margin-top: 2rem !important; }
 
@@ -175,13 +178,13 @@ body {
     background: transparent;
     font-size: 1.6rem; }
   .btn:hover {
-    transform: translateY(-3px);
+    transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
     .btn:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
   .btn:active {
-    transform: translateY(-1px);
+    transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .btn--white {
     background-color: white;
@@ -210,15 +213,15 @@ body {
   color: white;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid white;
-  padding: 3px;
+  border-bottom: .1rem solid white;
+  padding: .3rem;
   transition: all .2s; }
 
 .btn-text:hover {
   background-color: white;
   color: white;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px); }
+  transform: translateY(-0.2rem); }
 
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -255,9 +258,9 @@ li {
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 10px 1%;
-  max-width: 400px;
-  max-height: 360px;
+  margin: 1rem 1%;
+  max-width: 40rem;
+  max-height: 36rem;
   width: 48%;
   height: auto;
   background: #3085a3;
@@ -312,7 +315,7 @@ li {
   margin: 0; }
 
 .grid figure p {
-  letter-spacing: 1px;
+  letter-spacing: .1rem;
   font-size: 68.5%; }
 
 /* Individual effects */
@@ -324,7 +327,7 @@ figure.effect-julia {
 
 figure.effect-julia img {
   max-width: none;
-  height: 400px;
+  height: 40rem;
   -webkit-transition: opacity 1s, -webkit-transform 1s;
   transition: opacity 1s, transform 1s;
   -webkit-backface-visibility: hidden;
@@ -348,8 +351,8 @@ figure.effect-julia p {
   font-size: 75%;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-360px, 0, 0);
-  transform: translate3d(-360px, 0, 0); }
+  -webkit-transform: translate3d(-36rem, 0, 0);
+  transform: translate3d(-36rem, 0, 0); }
 
 figure.effect-julia p:first-child {
   -webkit-transition-delay: 0.15s;

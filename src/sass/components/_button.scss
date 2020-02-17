@@ -15,7 +15,7 @@
   }
   
   &:hover {
-    transform: translateY(-3px);
+    transform: translateY(-.3rem);
     box-shadow: 0 1rem 2rem rgba(black,.2);
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
@@ -24,7 +24,7 @@
   }
   
   &:active {
-    transform: translateY(-1px);
+    transform: translateY(-.1rem);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.2);;
   }
   
@@ -72,8 +72,8 @@
     // display inline so we can use box model properties such as padding margin
     display: inline-block;
     text-decoration: none;
-    border-bottom: 1px solid white;
-    padding: 3px;
+    border-bottom: .1rem solid white;
+    padding: .3rem;
     transition: all .2s;
   }
 
@@ -81,7 +81,7 @@
     background-color: white;
     color: white;
     box-shadow: 0 1rem 2rem rgba(black,.15);
-    transform: translateY(-2px);
+    transform: translateY(-.2rem);
   }
   &:active {
     box-shadow: 0 .5rem 1rem rgba(black,.15);
