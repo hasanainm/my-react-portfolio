@@ -11,7 +11,7 @@ const AboutMe = () => {
         <p className="u-margin-top-tiny heading-primary--bio">My name is Hasanain Mohammed and I am a Full-Stack Web Developer. I'm also a UH Cougar, Houstonian, and a tech aficionado. As a freelancer, I love learning new technologies and creating projects. As I grow as a developer I want to travel, meet new people, and talk about how things code!</p>
       </div>
       <div className="col-1-of-2">
-        <img src="/img/hasanain.png" className="mesize" alt="me"/>
+        <img src="./img/hasanain.png" className="mesize" alt="me"/>
       </div>
     </div>
 
