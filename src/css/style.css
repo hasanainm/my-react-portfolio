@@ -50,6 +50,14 @@ body {
   color: white;
   text-transform: uppercase; }
 
+.heading-primary--webApps {
+  display: block;
+  font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: .5rem;
+  color: grey;
+  text-transform: uppercase; }
+
 .heading-primary--sub {
   display: block;
   font-weight: 300;
@@ -82,6 +90,30 @@ body {
   color: grey;
   text-transform: uppercase; }
 
+.heading-primary--project-title {
+  display: block;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: .3rem;
+  color: grey;
+  text-transform: uppercase; }
+
+.heading-primary--other-title {
+  display: block;
+  font-weight: 500;
+  font-size: 1.87rem;
+  letter-spacing: .3rem;
+  color: grey;
+  text-transform: uppercase; }
+
+.heading-primary--other-bio {
+  display: block;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: .2rem;
+  color: white;
+  text-transform: uppercase; }
+
 .heading-primary--skills {
   display: block;
   font-weight: 300;
@@ -98,8 +130,20 @@ body {
   color: darkslategrey;
   text-transform: uppercase; }
 
+.heading-primary--bio-tech {
+  display: block;
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: .2rem;
+  color: darkslategrey;
+  text-transform: uppercase; }
+
 .bio {
   padding-left: 13rem; }
+
+.links {
+  text-decoration: none;
+  color: darkslategrey; }
 
 *,
 *::after,
@@ -345,7 +389,7 @@ figure.effect-julia:hover p {
   color: white;
   letter-spacing: .3rem;
   font-size: 1.5em;
-  background: linear-gradient(to right bottom, #88ddd3, #4361c2); }
+  background-color: #2b506b; }
 
 .icons {
   font-size: 3.5rem;
@@ -366,6 +410,9 @@ figure.effect-julia:hover p {
   .skills-icon--firebase {
     width: 8%;
     margin-right: 2rem; }
+
+.webApps-list {
+  background-color: lightgrey; }
 
 .row {
   max-width: 114rem;

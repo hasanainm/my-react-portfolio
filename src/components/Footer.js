@@ -5,7 +5,7 @@ import "../css/style.css";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer u-margin-top-big">
+      <footer className="footer">
 
         <a href="mailto:hasanainm0603@gmail.com" target="_blank" rel="noopener noreferrer"><i className="fas fa-envelope-square u-margin-top-small icons"></i></a>
         <a href="https://www.linkedin.com/in/hasanainmohammed/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin u-margin-top-small icons"></i></a>
