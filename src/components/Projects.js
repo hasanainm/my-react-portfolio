@@ -11,7 +11,7 @@ const Projects = () => {
           <div className="col-1-of-2">
             <h1 className="heading-primary--project-title u-margin-top-small">Portfolio Builder</h1>
             <br />
-            <h2 className="heading-primary--bio">This web-based application allows users to build portfolio by simply entering their information. Users are given templates to choose from and are able to share the URL with their employeers, collegues, friends, and more!</h2>
+            <h2 className="heading-primary--bio">This web-based application allows users to build portfolio by simply entering their information. Users are given templates to choose from and are able to share the URL with their employers, colleagues, friends, and more!</h2>
             <br />
             <h2 className="heading-primary--bio-tech">Handlebars • Bootstrap • jQuery • Node.js • Express • MySQL • Sequelize • JAWSDB • Firebase Auth • Heroku</h2>
             <br />
