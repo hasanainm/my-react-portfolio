@@ -451,7 +451,7 @@ figure.effect-julia:hover p {
 
 .main-bg {
   position: relative;
-  background-image: linear-gradient(to right bottom, rgba(136, 221, 211, 0.4), rgba(67, 97, 194, 0.4)), url(/img/john-towner-JgOeRuGD_Y4-unsplash.jpg);
+  background-image: linear-gradient(to right bottom, rgba(136, 221, 211, 0.4), rgba(67, 97, 194, 0.4)), url(/./img/john-towner-JgOeRuGD_Y4-unsplash.png);
   background-size: cover;
   width: 100vw;
   height: 90vh; }
