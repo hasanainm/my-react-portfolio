@@ -11,7 +11,7 @@ const Cli = () => {
           <h2 className="cli-name">LIRIBOT</h2>
           <div>
             <p>Language Interpretation & Recognition</p>
-            <p>Interface • Node + Spotify + Axios </p>
+            <p>Interface • Node • Spotify • Axios </p>
             <br />
             <p>Click to view code</p>
           </div>
@@ -25,8 +25,9 @@ const Cli = () => {
         <figcaption>
           <h2 className="cli-name">BAMAZON</h2>
           <div>
-            <p>Language Interpretation & Recognition</p>
-            <p>Interface • Node + Spotify + Axios </p>
+            <p>Amazon as a CLI App</p>
+            <br/>
+            <p>Node • Inquirer NPM Package • MySQL </p>
             <br />
             <p>Click to view code</p>
           </div>
