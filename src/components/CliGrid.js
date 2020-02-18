@@ -4,7 +4,7 @@ import Cli from "./Cli";
 const CliGrid = () => {
   return (
     <div>
-    <section className="cli-bg">
+    <section className="cli-bg u-padding-bottom-small">
       <div className="row">
         <h1 className="heading-primary--cli u-padding-top-tiny">CLI Projects</h1>
         <Cli />

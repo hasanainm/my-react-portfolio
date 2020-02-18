@@ -3,3 +3,14 @@
   border-radius: .2rem;
 }
 
+.youtube-vid {
+  @include respond(tab-port) {
+    width: 45rem;
+    height: 30rem;
+  }
+
+  @include respond(phone) {
+    width: 40rem;
+    height: 25rem;
+  }
+}

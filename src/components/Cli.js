@@ -3,7 +3,8 @@ import "../css/style.css";
 
 const Cli = () => {
   return (
-    <div className="grid">
+    <div className="row">
+    <div className="col-1-of-2">
       <figure className="effect-julia">
         <img src="./img/liribot.png" alt="liribot" />
         <figcaption>
@@ -17,6 +18,8 @@ const Cli = () => {
           <a target="blank" href="https://github.com/hasanainm/liri-node-app">Code</a>
         </figcaption>
       </figure>
+      </div>
+      <div className="col-1-of-2">
       <figure className="effect-julia">
         <img src="./img/bamazon.png" alt="liribot" />
         <figcaption>
@@ -30,6 +33,7 @@ const Cli = () => {
           <a target="blank" href="https://github.com/hasanainm/bamazon">Code</a>
         </figcaption>
       </figure>
+    </div>
     </div>
   )
 }

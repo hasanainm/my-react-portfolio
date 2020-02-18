@@ -1,3 +1,21 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: Base + typography > general layout + grid > page layout > components
+em measurement is more ideal when using media queries
+
+ORDER: Base + typography > general layout + grid > page layout > componenets
+
+1em = 16px
+*/
 .u-center-text {
   text-align: center !important; }
 
@@ -40,18 +58,19 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.7;
-  text-align: center;
-  height: 100%;
-  padding: 3rem 0 0 0;
-  min-height: 100%; }
+  text-align: center; }
 
 .heading-primary--main {
   display: block;
   font-weight: 300;
-  font-size: 3.7rem;
+  font-size: 4rem;
   letter-spacing: .6rem;
   color: white;
   text-transform: uppercase; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary--main {
+      letter-spacing: .3rem;
+      font-size: 3rem; } }
 
 .heading-primary--webApps {
   display: block;
@@ -60,14 +79,25 @@ body {
   letter-spacing: .5rem;
   color: grey;
   text-transform: uppercase; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-primary--webApps {
+      letter-spacing: .3rem;
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary--webApps {
+      letter-spacing: .1rem;
+      font-size: 2rem; } }
 
 .heading-primary--sub {
   display: block;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 2.5rem;
   letter-spacing: .5rem;
   color: white;
   text-transform: uppercase; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary--sub {
+      letter-spacing: .3rem; } }
 
 .heading-primary--other {
   display: block;
@@ -76,6 +106,14 @@ body {
   letter-spacing: .5rem;
   color: grey;
   text-transform: uppercase; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-primary--other {
+      letter-spacing: .3rem;
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary--other {
+      letter-spacing: .1rem;
+      font-size: 2rem; } }
 
 .heading-primary--cli {
   display: block;
@@ -84,6 +122,14 @@ body {
   letter-spacing: .5rem;
   color: white;
   text-transform: uppercase; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-primary--cli {
+      letter-spacing: .3rem;
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary--cli {
+      letter-spacing: .1rem;
+      font-size: 2rem; } }
 
 .heading-primary--project {
   display: block;
@@ -92,6 +138,14 @@ body {
   letter-spacing: .5rem;
   color: grey;
   text-transform: uppercase; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-primary--project {
+      letter-spacing: .3rem;
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary--project {
+      letter-spacing: .1rem;
+      font-size: 2rem; } }
 
 .heading-primary--project-title {
   display: block;
@@ -100,6 +154,13 @@ body {
   letter-spacing: .3rem;
   color: grey;
   text-transform: uppercase; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-primary--project-title {
+      letter-spacing: .1rem;
+      font-size: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary--project-title {
+      font-size: .7rem; } }
 
 .heading-primary--other-title {
   display: block;
@@ -108,6 +169,13 @@ body {
   letter-spacing: .3rem;
   color: grey;
   text-transform: uppercase; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-primary--other-title {
+      letter-spacing: .1rem;
+      font-size: 1.2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary--other-title {
+      font-size: .7rem; } }
 
 .heading-primary--other-bio {
   display: block;
@@ -124,6 +192,14 @@ body {
   letter-spacing: .5rem;
   color: grey;
   text-transform: uppercase; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-primary--skills {
+      letter-spacing: .3rem;
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary--skills {
+      letter-spacing: .1rem;
+      font-size: 2rem; } }
 
 .heading-primary--bio {
   display: block;
@@ -132,6 +208,13 @@ body {
   letter-spacing: .2rem;
   color: darkslategrey;
   text-transform: uppercase; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-primary--bio {
+      letter-spacing: .1rem;
+      font-size: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary--bio {
+      font-size: .7rem; } }
 
 .heading-primary--bio-tech {
   display: block;
@@ -140,9 +223,22 @@ body {
   letter-spacing: .2rem;
   color: darkslategrey;
   text-transform: uppercase; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-primary--bio-tech {
+      letter-spacing: .1rem;
+      font-size: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary--bio-tech {
+      font-size: .7rem; } }
 
 .bio {
   padding-left: 13rem; }
+  @media only screen and (max-width: 56.25em) {
+    .bio {
+      padding-left: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .bio {
+      padding-left: 3rem; } }
 
 .links {
   text-decoration: none;
@@ -159,9 +255,22 @@ html {
   /* font-size: 10px; - "bad practice", should not be pixels because by doing so you will override the browser font size setting that the user can manually change in the settings, for example when the user can not see so good. The user will be able to change the default font size however our root font size will remain unaffected.  */
   /* change to percentage will translate to a percentage of the font size given by the browser. By default the page will set to 16px. So if we put 100% this would mean that the root font size would be 16 pixel if the user doesnt change anything and if the user does change the default font size, lets say to 18px then the root font size will be 18 px. If you dont want it to be 16px by default all you have to do is divide what you want by 16px...so 10/16 = .625. 62.5%. 62.5 * 16 = 10px  With this you allow the user to actually zoom in on the page automatically, not only to change the font size but to also zoom in on the page */
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 .btn {
   /* The after pseudo-element that were gonna use adds like a virtual element right after the element that were selecting and we can then style that element*/
@@ -235,8 +344,7 @@ li {
 
 .cli-bg {
   background-color: #2b506b;
-  width: 100vw;
-  height: 85vh; }
+  height: auto; }
 
 .cli-name {
   font-weight: 300;
@@ -244,37 +352,34 @@ li {
   letter-spacing: .5rem;
   text-transform: uppercase; }
 
-.grid {
-  position: relative;
-  clear: both;
-  margin: 0 auto;
-  padding: 1em 0 4em;
-  max-width: 83rem;
-  list-style: none;
-  text-align: center; }
-
 /* Common style */
-.grid figure {
+figure {
   position: relative;
   float: left;
   overflow: hidden;
   margin: 1rem 1%;
   max-width: 40rem;
   max-height: 36rem;
-  width: 48%;
   height: auto;
   background: #3085a3;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-left: 7rem; }
+  @media only screen and (max-width: 56.25em) {
+    figure {
+      margin-left: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    figure {
+      margin-left: -3rem; } }
 
-.grid figure img {
+figure img {
   position: relative;
   display: block;
   min-height: 100%;
   max-width: 100%;
   opacity: 0.6; }
 
-.grid figure figcaption {
+figure figcaption {
   padding: 2em;
   color: #fff;
   text-transform: uppercase;
@@ -282,12 +387,12 @@ li {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.grid figure figcaption::before,
-.grid figure figcaption::after {
+figure figcaption::before,
+figure figcaption::after {
   pointer-events: none; }
 
-.grid figure figcaption,
-.grid figure figcaption > a {
+figure figcaption,
+figure figcaption > a {
   position: absolute;
   top: 0;
   left: 0;
@@ -296,25 +401,25 @@ li {
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.grid figure figcaption > a {
+figure figcaption > a {
   z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
   font-size: 0;
   opacity: 0; }
 
-.grid figure h2 {
+figure h2 {
   word-spacing: -0.15em;
   font-weight: 300; }
 
-.grid figure h2 span {
+figure h2 span {
   font-weight: 800; }
 
-.grid figure h2,
-.grid figure p {
+figure h2,
+figure p {
   margin: 0; }
 
-.grid figure p {
+figure p {
   letter-spacing: .1rem;
   font-size: 68.5%; }
 
@@ -404,12 +509,25 @@ figure.effect-julia:hover p {
   width: 30rem;
   border-radius: .2rem; }
 
+@media only screen and (max-width: 56.25em) {
+  .youtube-vid {
+    width: 45rem;
+    height: 30rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .youtube-vid {
+    width: 40rem;
+    height: 25rem; } }
+
 .skills-list {
   background-color: lightgrey; }
 
 .skills-icon {
   width: 5%;
   margin-right: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .skills-icon {
+      width: 2.5%; } }
   .skills-icon--firebase {
     width: 8%;
     margin-right: 2rem; }
@@ -422,6 +540,13 @@ figure.effect-julia:hover p {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -430,6 +555,13 @@ figure.effect-julia:hover p {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -453,7 +585,6 @@ figure.effect-julia:hover p {
   position: relative;
   background-image: linear-gradient(to right bottom, rgba(136, 221, 211, 0.4), rgba(67, 97, 194, 0.4)), url(/./img/john-towner-JgOeRuGD_Y4-unsplash.png);
   background-size: cover;
-  width: 100vw;
   height: 90vh; }
 
 .skills-list {

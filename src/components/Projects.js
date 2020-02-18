@@ -22,7 +22,7 @@ const Projects = () => {
             </p></h2>
           </div>
           <div className="col-1-of-2">
-            <iframe title="myFrame" width="560" height="315" src="https://www.youtube.com/embed/D_7pMAuzB48" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe className="youtube-vid" title="myFrame" width="560" height="315" src="https://www.youtube.com/embed/D_7pMAuzB48" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         
         </div>
