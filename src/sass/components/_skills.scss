@@ -5,9 +5,9 @@
 .skills-icon {
   width: 5%;
   margin-right: 3rem;
-  @include respond(phone) {
-    width: 2.5%;
-  }
+
+  
+
   &--firebase {
     width: 8%;
     margin-right: 2rem;

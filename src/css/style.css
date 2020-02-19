@@ -506,6 +506,12 @@ figure.effect-julia:hover p {
   letter-spacing: .3rem;
   font-size: 1.5em;
   background-color: #2b506b; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding-top: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      padding-top: 2rem; } }
 
 .icons {
   font-size: 3.5rem;
@@ -533,15 +539,28 @@ figure.effect-julia:hover p {
 .skills-icon {
   width: 5%;
   margin-right: 3rem; }
-  @media only screen and (max-width: 37.5em) {
-    .skills-icon {
-      width: 2.5%; } }
   .skills-icon--firebase {
     width: 8%;
     margin-right: 2rem; }
 
 .webApps-list {
   background-color: lightgrey; }
+
+@media only screen and (max-width: 56.25em) {
+  .othericons {
+    margin-left: 0; } }
+
+@media only screen and (max-width: 37.5em) {
+  .othericons {
+    margin-left: 0; } }
+
+@media only screen and (max-width: 56.25em) {
+  .u-margin-top-small {
+    margin-top: 0rem !important; } }
+
+@media only screen and (max-width: 37.5em) {
+  .u-margin-top-small {
+    margin-top: 0 !important; } }
 
 .row {
   max-width: 114rem;

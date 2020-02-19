@@ -1,3 +1,21 @@
 .webApps-list{
   background-color: lightgrey;
 }
+
+.othericons {
+@include respond(tab-port) {
+  margin-left: 0;
+}
+@include respond(phone) {
+  margin-left: 0;
+}
+}
+
+.u-margin-top-small{
+  @include respond(tab-port) {
+  margin-top: 0rem !important;
+  }
+  @include respond(phone) {
+  margin-top: 0 !important; 
+  }
+}
