@@ -4,7 +4,7 @@ import "../css/style.css";
 
 const AboutMe = () => {
   return (
-    <div className="row u-margin-top-small">
+    <div className="row u-margin-top-small" id="aboutme">
       <div className="col-1-of-2 u-left-text bio u-margin-top-small">
         <h1 className="heading-primary--other u-margin-bottom-tiny">Born and raised in Houston, Texas</h1>
         <hr className="line"/>
