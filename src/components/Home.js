@@ -15,7 +15,7 @@ class Home extends Component {
               <span className="heading-primary--sub">Full-Stack Web Developer </span>
             </h1>
           </div>
-          <Link activeClas="active" to="aboutme" spy={true} smooth={true} offset={-70} duration={500} ><ul className="actions u-margin-top-small">
+          <Link activeClas="active" to="aboutme" spy={true} smooth={true} offset={0} duration={500} ><ul className="actions u-margin-top-small">
             <li><a href="#one" className="button scrolly btn btn--white btn--animated">Check me out</a></li>
           </ul></Link>
 
