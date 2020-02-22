@@ -7,10 +7,12 @@
   @include respond(tab-port) {
     width: 45rem;
     height: 30rem;
+    margin-bottom: 4rem;
   }
 
   @include respond(phone) {
     width: 40rem;
     height: 25rem;
+    margin-bottom: 4rem;
   }
 }
