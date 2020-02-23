@@ -556,6 +556,14 @@ figure.effect-julia:hover p {
   visibility: hidden;
   transform: translateY(-4rem); }
 
+.submit-email {
+  background-color: white;
+  color: black;
+  padding: 1.2rem;
+  letter-spacing: .2rem;
+  float: right;
+  border-radius: .2rem; }
+
 .footer {
   color: white;
   letter-spacing: .3rem;

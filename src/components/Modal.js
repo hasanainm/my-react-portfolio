@@ -42,6 +42,9 @@ const Modal = () => {
                 <input type="textarea" className="form__input" placeholder="Message" required />
                 <label htmlFor="message" className="form__label">Message</label>
               </div>
+
+
+              <button className="submit-email">Submit</button>
             </form>
 
           </div>
